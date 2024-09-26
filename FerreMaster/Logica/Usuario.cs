@@ -5,13 +5,16 @@ namespace FerreMaster.Logica
 {
 	public class Usuario
 	{
+		#region Propiedades
 		// Propiedades de la clase Usuario
 		public int IdUsuario { get; set; }
 		public string NombreUsuario { get; set; }
 		public string Contraseña { get; set; }
 		public string Email { get; set; }
 		public bool Activo { get; set; }
+		#endregion
 
+		#region Métodos
 		// Método para agregar un nuevo usuario a la base de datos
 		public static int AgregarUsuario(string nombreUsuario, string contraseña, string email, bool activo)
 		{
@@ -91,5 +94,6 @@ namespace FerreMaster.Logica
 			reader.Close();
 			return roles;
 		}
+		#endregion
 	}
 }

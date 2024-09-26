@@ -5,9 +5,12 @@ namespace FerreMaster.Logica
 {
 	public class Rol
 	{
+		#region Propiedades
 		public int IdRol { get; set; }
 		public string NombreRol { get; set; }
+		#endregion
 
+		#region Metodos
 		// Método para agregar un rol a la base de datos
 		public static int AgregarRol(string nombreRol)
 		{
@@ -41,5 +44,6 @@ namespace FerreMaster.Logica
 			string query = $"DELETE FROM Roles WHERE IdRol = {idRol}";
 			return ComunDB.EjecutarComando(query);
 		}
+		#endregion
 	}
 }

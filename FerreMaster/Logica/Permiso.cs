@@ -5,9 +5,12 @@ namespace FerreMaster.Logica
 {
 	public class Permiso
 	{
+		# region Propiedades
 		public int IdPermiso { get; set; }
 		public string Descripcion { get; set; }
+		#endregion
 
+		#region Métodos
 		public static int AgregarPermiso(string descripcion)
 		{
 			string query = $"INSERT INTO Permisos (Descripcion) VALUES ('{descripcion}')";
@@ -38,5 +41,6 @@ namespace FerreMaster.Logica
 			string query = $"DELETE FROM Permisos WHERE IdPermiso = {idPermiso}";
 			return ComunDB.EjecutarComando(query);
 		}
+		#endregion
 	}
 }
