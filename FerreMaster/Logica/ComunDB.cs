@@ -1,7 +1,34 @@
-﻿namespace FerreMaster
+﻿using System.Data;
+using System.Data.SqlClient;
+
+namespace FerreMaster
 {
-	internal class ComunDB
+	public class ComunDB
 	{
 		//Esta clase es para la cadena ded conexcion de la Base de Datos
+		const string StringDeConexion = @"Data Source=DESKTOP-H0P46IP\SQLEXPRESS;InitialCatalog=RegistroAcademico;Integrated Security=True";
+
+		private static SqlConnection ObtenerConexion()
+		{
+			SqlConnection _conexion = new SqlConnection(StringDeConexion);
+			_conexion.Open();
+			return _conexion;
+		}
+
+		public static int EjecutarComando(string pConsulta)
+		{
+			SqlConnection _conexion = ObtenerConexion();
+			SqlCommand _comando = new SqlCommand(pConsulta, _conexion);
+			int resultado = _comando.ExecuteNonQuery();
+			_conexion.Close();
+			return resultado;
+		}
+		public static SqlDataReader EjecutarComandoReader(string pConsulta)
+		{
+			SqlConnection _conexion = ObtenerConexion();
+			SqlCommand _comando = new SqlCommand(pConsulta, _conexion);
+			SqlDataReader _reader = _comando.ExecuteReader(CommandBehavior.CloseConnection);
+			return _reader;
+		}
 	}
 }
