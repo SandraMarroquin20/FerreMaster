@@ -53,6 +53,9 @@
     <Compile Include="InterfazUsuario\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Logica\Permiso.cs" />
+    <Compile Include="Logica\Rol.cs" />
+    <Compile Include="Logica\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="InterfazUsuario\Login.resx">
