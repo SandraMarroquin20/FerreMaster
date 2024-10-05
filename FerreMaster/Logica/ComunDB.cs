@@ -6,7 +6,7 @@ namespace FerreMaster
 	public class ComunDB
 	{
 		//Esta clase es para la cadena de conexion de la Base de Datos
-		const string StringDeConexion = @"Data Source=MIRANDA\MIRANDA2019;Initial Catalog=FerreteriaDB;Integrated Security=True";
+		const string StringDeConexion = @"Data Source=DESKTOP-JSF8LSD;Initial Catalog=FerreteriaDB;Integrated Security=True";
 
 		private static SqlConnection ObtenerConexion()
 		{

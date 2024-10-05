@@ -43,6 +43,23 @@
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
+            // button1
+            // 
+            button1.BackColor = System.Drawing.Color.Transparent;
+            button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button1.ForeColor = System.Drawing.Color.Transparent;
+            button1.Image = global::FerreMaster.Properties.Resources.borrar;
+            button1.Location = new System.Drawing.Point(528, 13);
+            button1.Name = "button1";
+            button1.Size = new System.Drawing.Size(45, 25);
+            button1.TabIndex = 13;
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -61,23 +78,6 @@
             this.panel2.Size = new System.Drawing.Size(576, 420);
             this.panel2.TabIndex = 1;
             // 
-            // button1
-            // 
-            button1.BackColor = System.Drawing.Color.Transparent;
-            button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button1.ForeColor = System.Drawing.Color.Transparent;
-            button1.Image = global::FerreMaster.Properties.Resources.borrar;
-            button1.Location = new System.Drawing.Point(528, 13);
-            button1.Name = "button1";
-            button1.Size = new System.Drawing.Size(45, 25);
-            button1.TabIndex = 13;
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // btnIngresar
             // 
             this.btnIngresar.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -89,7 +89,7 @@
             this.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIngresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIngresar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnIngresar.Location = new System.Drawing.Point(209, 337);
+            this.btnIngresar.Location = new System.Drawing.Point(203, 338);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(164, 49);
             this.btnIngresar.TabIndex = 12;
